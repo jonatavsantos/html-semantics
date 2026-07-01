@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário em HTML</h1>
+
+    <!-- ACTION = Para onde os dados vão -->
+     <!-- METHOD = Como os dados vão ser enviados -->
+    <form action="#" method="POST">
+
+
+        <!-- INPUT = Campo de entrada de dados -->
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome"/>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Digite seu email"/>
+
+
+        <!-- TEXTAREA = Campo de entrada de texto mais longo -->
+        <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+
+        <!-- RADIO = Botão de seleção -->
+        <label for="masculino">
+            <input type="radio" name="genero" value="masculino"/>
+            Masculino
+        </label>
+        <label for="feminino">
+            <input type="radio" name="genero" value="feminino"/>
+            Feminino
+        </label>
+
+        <!-- CHECKBOX = Caixa de seleção -->
+
+        <input type="checkbox" name="interesses" value="esportes"/>
+        <label for="esportes">Esportes</label>
+
+        <input type="checkbox" name="interesses" value="musica"/>
+        <label for="musica">Música</label>
+
+        <input type="checkbox" name="interesses" value="viagem"/>
+        <label for="viagem">Viagem</label>
+
+        <input type="checkbox" name="interesses" value="carros"/>
+        <label for="carros">Carros</label>
+
+        <!-- OPTIONS = Selecionar e esconder-->
+
+        <label for="pais">País:</label>
+        <select name="pais">
+            <option value="">Selecione um país</option>
+            <option value="brasil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="uruguai">Uruguai</option>
+        </select>
+
+
+        <!-- DATE = Campo de data -->
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" name="data_nascimento"/>
+
+
+        <!-- ARQUIVOS = Envio de arquivos -->
+        <label for="arquivo">Anexar arquivo:</label>
+        <input type="file" name="arquivo"/>
+
+
+        <!-- submit = Botão de envio do formulário --> 
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Limpar"/>
+    </form>
+</body>
+</html>
